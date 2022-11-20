@@ -1,0 +1,76 @@
+// @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;700;800;900&display=swap");
+
+/*
+Модифікатор "s-n":
+s-n - s - size, n - level number (від більшого до меншого)
+
+Розміри:
+12, 14, 16, 18, 24, 30, 45, 60
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: 120%;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 45px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+body {
+  font-family: $font_family_default;
+  font-size: $font_size_default;
+  font-weight: $font_weight_default;
+  color: $color_default;
+  line-height: $line_height_default;
+  letter-spacing: $letter_spacing_default;
+}
+
+body.frozen {
+  overflow: hidden;
+}
+
+.wrapper {
+  max-width: 100%;
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: $site_background;
+}
+
+.container {
+  max-width: $container_width + 30;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.page {
+  flex: 1 1 auto;
+}

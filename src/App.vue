@@ -1,30 +1,43 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <main class="page">
+    <router-view />
+  </main>
 </template>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+@import "./styles/panda.scss";
+
+.colors {
+  padding: 30px;
+  & > div {
+    width: 300px;
+    height: 100px;
+    border-radius: 2px;
+    margin-bottom: 10px;
+  }
 }
 
-nav {
-  padding: 30px;
+.pink {
+  background-color: $pink_color;
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+.pink-light {
+  background-color: $pink_light_color;
+}
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.purple {
+  background-color: $purple_color;
+}
+
+.blue {
+  background-color: $blue_color;
+}
+
+.grey {
+  background-color: $grey_color;
+}
+
+.turquoise {
+  background-color: $turquoise_color;
 }
 </style>

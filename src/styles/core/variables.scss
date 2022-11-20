@@ -1,0 +1,36 @@
+$white_color: #fafafa;
+$black_color: #222222;
+
+$pink_color: #f06292;
+$pink_light_color: #f8bbd0;
+
+$grey_color: #616161;
+
+$purple_color: #ba68c8;
+$purple_dark_color: #5c6bc0;
+
+$blue_color: #1976d2;
+
+$red_color: #ff5722;
+$green_color: #66bb6a;
+$yellow_color: #ffab00;
+
+$danger_state_color: $red_color;
+$warning_state_color: $yellow_color;
+$success_state_color: $green_color;
+$primary_state_color: $blue_color;
+
+$turquoise_color: #4db6ac;
+
+$container_width: 1180px;
+
+$font_family_default: "Mulish", sans-serif;
+$font_size_default: 14px;
+$font_weight_default: 400;
+$color_default: $black_color;
+$line_height_default: 150%;
+$letter_spacing_default: 0.4px;
+
+$site_background: $white_color;
+
+$transition_duration: 300ms;
