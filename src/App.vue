@@ -9,9 +9,10 @@
 
 .colors {
   padding: 30px;
+
   & > div {
-    width: 300px;
-    height: 100px;
+    width: 200px;
+    height: 50px;
     border-radius: 2px;
     margin-bottom: 10px;
   }

@@ -1,14 +1,24 @@
-// core
+// <core>
 @import "./core/reset.scss";
 @import "./core/variables.scss";
 @import "./core/base.scss";
 
-// forms
-@import "./components/forms/button.scss";
-@import "./components/forms/field.scss";
+// <elements>
 
-// views
-@import "./components/views/title.scss";
-@import "./components/views/badge.scss";
-@import "./components/views/text.scss";
-@import "./components/views/alert.scss";
+// /forms
+@import "./elements/forms/button.scss";
+@import "./elements/forms/field.scss";
+@import "./elements/forms/toggle.scss";
+@import "./elements/forms/radio.scss";
+@import "./elements/forms/checkbox.scss";
+@import "./elements/forms/select.scss";
+
+// /views
+@import "./elements/views/title.scss";
+@import "./elements/views/badge.scss";
+@import "./elements/views/text.scss";
+@import "./elements/views/alert.scss";
+
+// <layouts>
+
+// <sections>

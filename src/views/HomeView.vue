@@ -1,5 +1,12 @@
 <template>
   <div class="container">
+    <div class="colors">
+      <div class="pink-light"></div>
+      <div class="pink"></div>
+      <div class="purple"></div>
+      <div class="turquoise"></div>
+      <div class="blue"></div>
+    </div>
     <div class="card">
       <div class="title">
         <h4 class="title__head">Panda app</h4>
@@ -65,10 +72,81 @@
       </label>
     </div>
     <div class="card">
+      <label class="toggle">
+        <!-- Hidden field -->
+        <input type="checkbox" />
+        <!-- Custom toggle -->
+        <div class="toggle__wrapper">
+          <div class="toggle__inner">
+            <span class="toggle__state"></span>
+          </div>
+        </div>
+        <!-- Label -->
+        <span class="toggle__label">Do you have?</span>
+      </label>
+    </div>
+    <div class="card">
+      <!-- Radio 1 -->
+      <label class="radio">
+        <input name="choice" type="radio" />
+        <div class="radio__wrapper">
+          <span class="radio__state"></span>
+        </div>
+        <span class="radio__label">One choice 1</span>
+      </label>
+      <!-- Radio 2 -->
+      <label class="radio">
+        <input name="choice" type="radio" />
+        <div class="radio__wrapper">
+          <span class="radio__state"></span>
+        </div>
+        <span class="radio__label">One choice 2</span>
+      </label>
+      <!-- Radio 3 -->
+      <label class="radio">
+        <input name="choice" type="radio" />
+        <div class="radio__wrapper">
+          <span class="radio__state"></span>
+        </div>
+        <span class="radio__label">One choice 3</span>
+      </label>
+    </div>
+    <div class="card">
+      <label class="checkbox">
+        <input type="checkbox" />
+        <div class="checkbox__wrapper">
+          <span class="checkbox__state"></span>
+        </div>
+        <span class="radio__label">Many choice 1</span>
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" />
+        <div class="checkbox__wrapper">
+          <span class="checkbox__state"></span>
+        </div>
+        <span class="radio__label">Many choice 2</span>
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" />
+        <div class="checkbox__wrapper">
+          <span class="checkbox__state"></span>
+        </div>
+        <span class="radio__label">Many choice 3</span>
+      </label>
+    </div>
+    <div class="card">
+      <select class="select">
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+        <option value="4">Option 4</option>
+      </select>
+    </div>
+    <!-- <div class="card">
       <div class="alert">
         <div class="alert__title"></div>
       </div>
-    </div>
+    </div> -->
     <div class="card">
       <h2>Головний заголовок</h2>
       <p class="text text--s-1">
@@ -128,5 +206,9 @@ export default {
     font-weight: 700;
     margin-bottom: 10px;
   }
+}
+
+.card > label {
+  margin-bottom: 5px;
 }
 </style>

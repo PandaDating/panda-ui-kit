@@ -1,0 +1,25 @@
+.select {
+  cursor: pointer;
+  appearance: none;
+  border: 1px solid rgba($grey_color, 0.4);
+  font-size: 16px;
+  border-radius: 6px;
+  padding: 10px 40px 10px 15px;
+  letter-spacing: inherit;
+  background-image: url(@/assets/select-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 10px;
+  color: inherit;
+  transition-duration: $transition_duration;
+
+  &:focus {
+    box-shadow: 0 1px 8px rgba($blue_color, 0.3);
+  }
+
+  & option {
+    font-size: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+  }
+}

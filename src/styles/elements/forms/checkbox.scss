@@ -1,0 +1,47 @@
+.checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &__wrapper {
+    width: 17px;
+    height: 17px;
+    position: relative;
+    border-radius: 2px;
+    border: 1px solid rgba($grey_color, 0.6);
+    position: relative;
+    transition-duration: $transition_duration;
+  }
+
+  &__label {
+    margin-left: 10px;
+    font-size: 12px;
+  }
+
+  &__state {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    transition-duration: $transition_duration;
+  }
+
+  & input {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    &:checked + .checkbox__wrapper .checkbox__state {
+      background-color: rgba($blue_color, 1);
+    }
+
+    &:checked + .checkbox__wrapper {
+      border: 4px solid rgba($blue_color, 0.4);
+    }
+  }
+}
