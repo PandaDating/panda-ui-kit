@@ -200,7 +200,6 @@ export default {
 .card {
   padding: 15px 25px;
   margin-bottom: 10px;
-
   &__title {
     font-size: 18px;
     font-weight: 700;
